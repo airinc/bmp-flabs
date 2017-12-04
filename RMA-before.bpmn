@@ -47,7 +47,7 @@
         <bpmn:timeDate xsi:type="bpmn:tExpression" />
       </bpmn:timerEventDefinition>
     </bpmn:intermediateCatchEvent>
-    <bpmn:task id="Task_0ymnb1v" name="recive the product">
+    <bpmn:task id="Task_0ymnb1v" name="receive the product">
       <bpmn:incoming>SequenceFlow_1bk772p</bpmn:incoming>
       <bpmn:incoming>SequenceFlow_1qtpa4a</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0dwuypw</bpmn:outgoing>
