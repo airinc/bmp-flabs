@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<semantic:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" id="_1275940932088" targetNamespace="http://www.trisotech.com/definitions/_1275940932088" exporter="Camunda Modeler" exporterVersion="1.11.3">
+<semantic:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" id="_1275940932088" targetNamespace="http://www.trisotech.com/definitions/_1275940932088" exporter="Camunda Modeler" exporterVersion="1.6.0">
   <semantic:message id="_1275940932310" />
   <semantic:message id="_1275940932433" />
   <semantic:process id="_6-1" isExecutable="false">
@@ -50,10 +50,6 @@
       <semantic:incoming>_6-634</semantic:incoming>
       <semantic:outgoing>_6-636</semantic:outgoing>
     </semantic:task>
-    <semantic:endEvent id="_6-616" name="">
-      <semantic:incoming>_6-636</semantic:incoming>
-      <semantic:terminateEventDefinition />
-    </semantic:endEvent>
     <semantic:sequenceFlow id="_6-630" name="" sourceRef="OrderReceivedEvent" targetRef="_6-652" />
     <semantic:sequenceFlow id="_6-632" name="" sourceRef="_6-463" targetRef="_6-514" />
     <semantic:sequenceFlow id="_6-634" name="" sourceRef="_6-514" targetRef="_6-565" />
@@ -62,6 +58,10 @@
     <semantic:sequenceFlow id="_6-693" name="" sourceRef="_6-652" targetRef="_6-463" />
     <semantic:sequenceFlow id="_6-746" name="" sourceRef="CalmCustomerTask" targetRef="_6-674" />
     <semantic:sequenceFlow id="_6-748" name="" sourceRef="_6-674" targetRef="CalmCustomerTask" />
+    <semantic:endEvent id="_6-616" name="">
+      <semantic:incoming>_6-636</semantic:incoming>
+      <semantic:terminateEventDefinition />
+    </semantic:endEvent>
   </semantic:process>
   <semantic:message id="_1275940932198" />
   <semantic:process id="_6-2" isExecutable="false">
@@ -181,7 +181,7 @@
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Trisotech.Visio__6__6-616" bpmnElement="_6-616">
-        <dc:Bounds x="722" y="647" width="32" height="32" />
+        <dc:Bounds x="817" y="647" width="32" height="32" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Trisotech.Visio__6__6-61" bpmnElement="_6-61">
@@ -281,8 +281,7 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Trisotech.Visio__6__6-636" bpmnElement="_6-636">
         <di:waypoint xsi:type="dc:Point" x="686" y="663" />
-        <di:waypoint xsi:type="dc:Point" x="704" y="663" />
-        <di:waypoint xsi:type="dc:Point" x="722" y="663" />
+        <di:waypoint xsi:type="dc:Point" x="817" y="663" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Trisotech.Visio__6__6-750" bpmnElement="_6-750">
